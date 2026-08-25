@@ -15,7 +15,7 @@
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content> -->
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar color="secondary">
     <ion-title>Mis Redes Sociales</ion-title>
   </ion-toolbar>
@@ -30,11 +30,42 @@
     
     <ion-card-content>
       <!-- Generador automático de QR en imagen (cambiar la URL del final) -->
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://instagram.com" 
+      <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://instagram.com" 
            alt="Código QR" 
            style="border-radius: 8px; margin: 10px auto;" />
       
       <p style="margin-top: 10px;">Escanea este código con cualquier celular para abrir mi Instagram.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>QR de Emergencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-icon name="qr-code-outline" color="danger"></ion-icon>
+        Código QR Médico
+      </ion-card-title>
+      <ion-card-subtitle>Acceso rápido a datos de auxilio</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <!-- Generador de QR con todos los datos de salud y contactos codificados -->
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=FICHA%20DE%20EMERGENCIA%0A--------------------%0AEstudiante%3A%20Jose%20Suarez%0AGrupo%20Sangu%C3%ADneo%3A%200%2B%0ADetalle%3A%20Alumno%20de%20Inform%C3%A1tica.%0A--------------------%0ACONTACTOS%20DE%20URGENCIA%3A%0A-%20Madre%3A%20%2B5491112345678%0A-%20Padre%3A%20%2B5491187654321%0A-%20Tutor%3A%20%2B5491144556677%0A-%20Instituci%C3%B3n%3A%2002964420000" 
+           alt="Código QR de Emergencia" 
+           style="border-radius: 12px; margin: 15px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
+      
+      <ion-item lines="none" class="ion-text-center">
+        <ion-label class="ion-text-wrap" color="medium">
+          <p>Al escanear este código con cualquier cámara o lector QR, se mostrarán en pantalla todos los datos de salud y los números de contacto para llamar de inmediato.</p>
+        </ion-label>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 </ion-content>
