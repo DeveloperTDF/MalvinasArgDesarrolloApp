@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Tab 1
@@ -14,4 +14,47 @@
   </ion-header>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content> -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ficha de Emergencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Datos personales -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Estudiante: Jose Suarez</ion-card-title>
+      <ion-card-subtitle>Grupo Sanguíneo: 0+</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Alumno de Informática. En caso de descompensación o urgencia, comunicarse inmediatamente con los contactos abajo.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Contactos de emergencia con botón de llamada directa -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label><strong>Llamadas de Urgencia</strong></ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-icon slot="start" name="call-outline" color="danger"></ion-icon>
+      <ion-label>
+        <h3>Mamá / Tutor</h3>
+        <p>+54 9 11 1234-5678</p>
+      </ion-label>
+      <ion-button slot="end" color="danger" href="tel:12345678">Llamar</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="medkit-outline" color="warning"></ion-icon>
+      <ion-label>
+        <h3>Emergencias Médicas</h3>
+        <p>107</p>
+      </ion-label>
+      <ion-button slot="end" color="warning" href="tel:107">Llamar</ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>

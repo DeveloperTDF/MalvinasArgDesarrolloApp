@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Tab 2
@@ -14,4 +14,27 @@
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content> -->
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Mis Redes Sociales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¡Escaneame!</ion-card-title>
+      <ion-card-subtitle>Conéctate a mi perfil</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <!-- Generador automático de QR en imagen (cambiar la URL del final) -->
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://instagram.com" 
+           alt="Código QR" 
+           style="border-radius: 8px; margin: 10px auto;" />
+      
+      <p style="margin-top: 10px;">Escanea este código con cualquier celular para abrir mi Instagram.</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
