@@ -1,0 +1,9 @@
+[tuca@archlinux MalvinasArgDesarrolloApp]$ nvm -v
+0.39.7
+[tuca@archlinux MalvinasArgDesarrolloApp]$ npm -v
+12.0.2
+[tuca@archlinux MalvinasArgDesarrolloApp]$ node -v
+v24.19.0
+[tuca@archlinux MalvinasArgDesarrolloApp]$ ionic -v
+7.2.1
+[tuca@archlinux MalvinasArgDesarrolloApp]$ 
